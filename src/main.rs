@@ -1,3 +1,6 @@
+//! This program assumes that the language is English, but it can be easily extended to
+//! include other Roman Alphabet based languages.
+
 extern crate wc;
 
 fn main() {
