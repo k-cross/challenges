@@ -21,8 +21,15 @@ mod unit_tests {
     }
 
     #[test]
+    fn test_string_vectorized_multiline() {
+        let test_string = "(This) {is} <a> \n [test] okay! \n So, just relax...";
+        let test_list = word_list(test_string);
+        assert_eq!(vec!["this","is","a","test","okay","so","just","relax"], test_list);
+    }
+
+    #[test]
     fn test_mapping_and_ordering() {
-        let test_string = "(This) {is} <a> [test] okay! So, just relax...";
+        let test_string = "(This) {is} <a> [test] okay! this this, is";
         let test_map = word_freq_list(test_string, 3);
         assert_eq!(vec!["this","is","a"], test_map);
     }
