@@ -5,4 +5,3 @@ authors = ["Kenneth <kenneth@lrlabs.in>"]
 
 [dependencies]
 regex = "0.2"
-ordermap = "0.2.10"
